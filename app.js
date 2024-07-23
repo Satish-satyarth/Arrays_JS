@@ -42,14 +42,26 @@ let arr1 = [1,2,3,4,[10,20,30,[100,200,300],1000,2000,300]]
 // console.log(Array.isArray("hitish"));
 // console.log(Array.isArray([1,2,3,4,5]));
 
-console.log(Array.from("satish"));
+// console.log(Array.from("satish"));
 /*
 Array.from() is a static property of the JavaScript Array object.
-
 You can only use it as Array.from().
-
 Using x.from(), where x is an array will return undefined.
+c*/
 
+let phy = 95;
+let chem = 45;
+let maths = 85;
+let ssc = 97;
 
-*/
+let marks = Array.of(phy,chem,maths, ssc);
+// console.log(marks);
 
+// console.log(marks.includes(90))
+// console.log(marks.includes(97))
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let text = fruits.join();   //The join() method returns an array as a string.
+
+let nme = fruits.join(" and ");
+console.log(nme);
